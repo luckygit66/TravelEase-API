@@ -2,7 +2,7 @@
 bin/
 obj/
 .vs/
-
+Logs/
 # Ignore Node, npm
 node_modules/
 
@@ -16,3 +16,5 @@ travelease-ui/build/
 *.cache
 *.DS_Store
 Thumbs.db
+appsettings.Development.json
+.env

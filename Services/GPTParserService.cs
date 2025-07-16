@@ -13,12 +13,12 @@ namespace TravelEaseApi.Services
         private readonly OpenAIService _openAI;
         private readonly ILogger<GPTParserService> _logger;
 
-        public GPTParserService(IConfiguration config, ILogger<GPTParserService> logger)
+        public GPTParserService(ApiSettings apiSettings, ILogger<GPTParserService> logger)
         {
             _logger = logger;
             _openAI = new OpenAIService(new OpenAiOptions
             {
-                ApiKey = config["OpenAI:ApiKey"]
+                ApiKey = apiSettings.OpenAIApiKey
             });
         }
 
@@ -26,7 +26,7 @@ namespace TravelEaseApi.Services
         {
             _logger.LogInformation("Received user input for parsing: {UserInput}", userInput);
 
-           var prompt = $@"
+            var prompt = $@"
 Extract the following details from this user input: '{userInput}'
 Return JSON ONLY in this format:
 

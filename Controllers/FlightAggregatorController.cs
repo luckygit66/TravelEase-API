@@ -1,23 +1,29 @@
-[ApiController]
-[Route("api/[controller]")]
-public class FlightAggregatorController : ControllerBase
+using Microsoft.AspNetCore.Mvc;
+using TravelEaseApi.Services; // 🔑 Required to find FlightAggregatorService
+
+namespace TravelEaseApi.Controllers // 🔑 Namespace required!
 {
-    private readonly FlightAggregatorService _flightAggregatorService;
-
-    public FlightAggregatorController(FlightAggregatorService flightAggregatorService)
+    [ApiController]
+    [Route("api/[controller]")]
+    public class FlightAggregatorController : ControllerBase
     {
-        _flightAggregatorService = flightAggregatorService;
-    }
+        private readonly FlightAggregatorService _flightAggregatorService;
 
-    [HttpGet("search")]
-    public async Task<IActionResult> Search(string from, string to, string date)
-    {
-        var result = await _flightAggregatorService.SearchFlightsAsync(from, to, date);
-        if (result == null)
+        public FlightAggregatorController(FlightAggregatorService flightAggregatorService)
         {
-            return BadRequest("Failed to fetch flights.");
+            _flightAggregatorService = flightAggregatorService;
         }
 
-        return Ok(result);
+        [HttpGet("search")]
+        public async Task<IActionResult> Search(string from, string to, string date)
+        {
+            var result = await _flightAggregatorService.SearchFlightsAsync(from, to, date);
+            if (result == null)
+            {
+                return BadRequest("Failed to fetch flights.");
+            }
+
+            return Ok(result);
+        }
     }
 }

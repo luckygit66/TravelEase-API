@@ -1,9 +1,17 @@
 using TravelEaseApi.Services;
+using TravelEaseApi.Models;
 using Serilog;
+using DotNetEnv;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configure Serilog
+// ✅ Load .env variables (OPENAI_API_KEY, TRAVELPAYOUTS_API_TOKEN, TRAVELPAYOUTS_MARKER)
+DotNetEnv.Env.Load();
+var openAIKey = Environment.GetEnvironmentVariable("OPENAI_API_KEY");
+var travelPayoutsToken = Environment.GetEnvironmentVariable("TRAVELPAYOUTS_API_TOKEN");
+var travelPayoutsMarker = Environment.GetEnvironmentVariable("TRAVELPAYOUTS_MARKER");
+
+// ✅ Configure Serilog
 Log.Logger = new LoggerConfiguration()
     .Enrich.FromLogContext()
     .WriteTo.Console()
@@ -12,7 +20,21 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Host.UseSerilog();
 
-// ✅ Add CORS policy
+// ✅ Optional: Log loaded keys (dev-only)
+Log.Information("OPENAI_API_KEY loaded: {OpenAIKey}", openAIKey);
+Log.Information("TRAVELPAYOUTS_API_TOKEN loaded: {TravelPayoutsToken}", travelPayoutsToken);
+Log.Information("TRAVELPAYOUTS_MARKER loaded: {TravelPayoutsMarker}", travelPayoutsMarker);
+
+// ✅ Centralized API Settings DI
+var apiSettings = new ApiSettings
+{
+    OpenAIApiKey = openAIKey,
+    TravelPayoutsApiToken = travelPayoutsToken,
+    TravelPayoutsMarker = travelPayoutsMarker
+};
+builder.Services.AddSingleton(apiSettings);
+
+// ✅ CORS for React app
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp", policy =>
@@ -23,25 +45,22 @@ builder.Services.AddCors(options =>
     });
 });
 
-// Add services to the container.
+// ✅ Register services
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Register GPT Parser Service
 builder.Services.AddSingleton<GPTParserService>();
 builder.Services.AddSingleton<PricePredictionService>();
 builder.Services.AddHttpClient<FlightSearchService>();
 builder.Services.AddScoped<FlightAggregatorService>();
 
-
-
+// ✅ Build app
 var app = builder.Build();
 
-// Use CORS **before** Authorization
+// ✅ Middleware pipeline
 app.UseCors("AllowReactApp");
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -50,8 +69,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
-
-// 👇 This enables your API controllers like FlightSearchController
 app.MapControllers();
 
 try

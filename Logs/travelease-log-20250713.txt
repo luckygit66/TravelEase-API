@@ -1,5 +1,0 @@
-2025-07-13 23:53:50.334 +05:30 [INF] Starting TravelEaseApi
-2025-07-13 23:53:50.467 +05:30 [INF] Now listening on: http://localhost:5055
-2025-07-13 23:53:50.473 +05:30 [INF] Application started. Press Ctrl+C to shut down.
-2025-07-13 23:53:50.474 +05:30 [INF] Hosting environment: Development
-2025-07-13 23:53:50.476 +05:30 [INF] Content root path: D:\TravelEase.ai\TravelEaseApi

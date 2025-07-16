@@ -1,27 +1,25 @@
 using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
+using TravelEaseApi.Models; // ✅ For ApiSettings
 
 namespace TravelEaseApi.Services
 {
     public class FlightSearchService
     {
         private readonly HttpClient _httpClient;
-        private readonly IConfiguration _configuration;
+        private readonly string _apiToken;
+        private readonly string _marker;
 
-        public FlightSearchService(HttpClient httpClient, IConfiguration configuration)
+        public FlightSearchService(HttpClient httpClient, ApiSettings apiSettings)
         {
             _httpClient = httpClient;
-            _configuration = configuration;
+            _apiToken = apiSettings.TravelPayoutsApiToken;
+            _marker = apiSettings.TravelPayoutsMarker;
         }
 
         public async Task<string> SearchFlightsAsync(string from, string to, string departDate)
         {
-            var token = _configuration["TravelPayouts:Token"];
-            var marker = _configuration["TravelPayouts:Marker"];
-
-            string requestUrl = $"https://api.travelpayouts.com/aviasales/v3/prices_for_dates?origin={from}&destination={to}&departure_at={departDate}&token={token}&marker={marker}";
+            string requestUrl = $"https://api.travelpayouts.com/aviasales/v3/prices_for_dates?origin={from}&destination={to}&departure_at={departDate}&token={_apiToken}&marker={_marker}";
 
             var response = await _httpClient.GetAsync(requestUrl);
 
