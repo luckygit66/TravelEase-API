@@ -1,0 +1,394 @@
+2025-07-15 10:40:56.966 +05:30 [INF] Starting TravelEaseApi
+2025-07-15 10:40:57.168 +05:30 [INF] Now listening on: http://localhost:5055
+2025-07-15 10:40:57.174 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-15 10:40:57.175 +05:30 [INF] Hosting environment: Development
+2025-07-15 10:40:57.177 +05:30 [INF] Content root path: D:\TravelEase.ai\TravelEaseApi
+2025-07-15 10:43:07.264 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5055/FlightPricePrediction/predict - application/json 98
+2025-07-15 10:43:07.338 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-07-15 10:43:07.348 +05:30 [INF] Executing endpoint 'TravelEaseApi.Controllers.FlightPricePredictionController.PredictPrice (TravelEaseApi)'
+2025-07-15 10:43:07.392 +05:30 [INF] Route matched with {action = "PredictPrice", controller = "FlightPricePrediction"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PredictPrice(TravelEaseApi.Models.FlightQuery) on controller TravelEaseApi.Controllers.FlightPricePredictionController (TravelEaseApi).
+2025-07-15 10:43:07.515 +05:30 [INF] Executing OkObjectResult, writing value of type 'TravelEaseApi.Models.PricePredictionResult'.
+2025-07-15 10:43:07.546 +05:30 [INF] Executed action TravelEaseApi.Controllers.FlightPricePredictionController.PredictPrice (TravelEaseApi) in 142.8704ms
+2025-07-15 10:43:07.556 +05:30 [INF] Executed endpoint 'TravelEaseApi.Controllers.FlightPricePredictionController.PredictPrice (TravelEaseApi)'
+2025-07-15 10:43:07.560 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5055/FlightPricePrediction/predict - 200 null application/json; charset=utf-8 299.8144ms
+2025-07-15 10:43:48.505 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - application/json 64
+2025-07-15 10:43:48.511 +05:30 [INF] Executing endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 10:43:48.526 +05:30 [INF] Route matched with {action = "ParseFlightQuery", controller = "FlightSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ParseFlightQuery(System.String) on controller TravelEaseApi.Controllers.FlightSearchController (TravelEaseApi).
+2025-07-15 10:43:48.548 +05:30 [INF] Processing flight search input...
+2025-07-15 10:43:48.724 +05:30 [INF] Received user input for parsing: Find me a flight from Delhi to Nanded under 70000 next month
+2025-07-15 10:43:52.660 +05:30 [INF] Successfully parsed FlightQuery: {"From":"Delhi","To":"Nanded","Month":"next month","MaxBudget":70000,"$type":"FlightQuery"}
+2025-07-15 10:43:52.671 +05:30 [INF] Executing OkObjectResult, writing value of type 'TravelEaseApi.Models.FlightQuery'.
+2025-07-15 10:43:52.684 +05:30 [INF] Executed action TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi) in 4152.3187ms
+2025-07-15 10:43:52.689 +05:30 [INF] Executed endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 10:43:52.693 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - 200 null application/json; charset=utf-8 4188.2954ms
+2025-07-15 12:21:05.065 +05:30 [INF] Application is shutting down...
+2025-07-15 12:49:36.464 +05:30 [INF] Starting TravelEaseApi
+2025-07-15 12:49:36.583 +05:30 [INF] Now listening on: http://localhost:5055
+2025-07-15 12:49:36.590 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-15 12:49:36.592 +05:30 [INF] Hosting environment: Development
+2025-07-15 12:49:36.594 +05:30 [INF] Content root path: D:\TravelEase.ai\TravelEaseApi
+2025-07-15 12:52:57.876 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - null null
+2025-07-15 12:52:57.906 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-07-15 12:52:57.912 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-07-15 12:52:57.914 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-07-15 12:52:57.921 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - 405 0 null 45.9459ms
+2025-07-15 12:53:07.470 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - null null
+2025-07-15 12:53:07.475 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-07-15 12:53:07.476 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-07-15 12:53:07.478 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - 405 0 null 8.876ms
+2025-07-15 12:53:13.021 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - null null
+2025-07-15 12:53:13.027 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-07-15 12:53:13.030 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-07-15 12:53:13.033 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - 405 0 null 11.8725ms
+2025-07-15 13:05:09.321 +05:30 [INF] Application is shutting down...
+2025-07-15 13:05:21.704 +05:30 [INF] Starting TravelEaseApi
+2025-07-15 13:05:21.842 +05:30 [INF] Now listening on: http://localhost:5055
+2025-07-15 13:05:21.847 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-15 13:05:21.849 +05:30 [INF] Hosting environment: Development
+2025-07-15 13:05:21.851 +05:30 [INF] Content root path: D:\TravelEase.ai\TravelEaseApi
+2025-07-15 13:05:40.327 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - null null
+2025-07-15 13:05:40.363 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-07-15 13:05:40.369 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-07-15 13:05:40.372 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-07-15 13:05:40.381 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - 405 0 null 55.1323ms
+2025-07-15 13:06:09.261 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - null null
+2025-07-15 13:06:09.267 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-07-15 13:06:09.268 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-07-15 13:06:09.271 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - 405 0 null 10.3467ms
+2025-07-15 13:08:40.722 +05:30 [INF] Application is shutting down...
+2025-07-15 13:08:59.870 +05:30 [INF] Starting TravelEaseApi
+2025-07-15 13:09:00.047 +05:30 [INF] Now listening on: http://localhost:5055
+2025-07-15 13:09:00.054 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-15 13:09:00.055 +05:30 [INF] Hosting environment: Development
+2025-07-15 13:09:00.057 +05:30 [INF] Content root path: D:\TravelEase.ai\TravelEaseApi
+2025-07-15 13:09:11.437 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - null null
+2025-07-15 13:09:11.465 +05:30 [INF] CORS policy execution successful.
+2025-07-15 13:09:11.472 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - 204 null null 36.3445ms
+2025-07-15 13:09:11.482 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - application/json 61
+2025-07-15 13:09:11.491 +05:30 [INF] CORS policy execution successful.
+2025-07-15 13:09:11.508 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-07-15 13:09:11.516 +05:30 [INF] Executing endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 13:09:11.546 +05:30 [INF] Route matched with {action = "ParseFlightQuery", controller = "FlightSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ParseFlightQuery(System.String) on controller TravelEaseApi.Controllers.FlightSearchController (TravelEaseApi).
+2025-07-15 13:09:11.616 +05:30 [INF] Processing flight search input...
+2025-07-15 13:09:11.757 +05:30 [INF] Received user input for parsing: find me a flight from delhi to dubai next month under 90000
+2025-07-15 13:09:14.777 +05:30 [INF] Successfully parsed FlightQuery: {"From":"Delhi","To":"Dubai","Month":"next month","MaxBudget":90000,"$type":"FlightQuery"}
+2025-07-15 13:09:14.791 +05:30 [INF] Executing OkObjectResult, writing value of type 'TravelEaseApi.Models.FlightQuery'.
+2025-07-15 13:09:14.804 +05:30 [INF] Executed action TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi) in 3251.3351ms
+2025-07-15 13:09:14.807 +05:30 [INF] Executed endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 13:09:14.810 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - 200 null application/json; charset=utf-8 3328.0748ms
+2025-07-15 13:12:55.152 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - null null
+2025-07-15 13:12:55.156 +05:30 [INF] CORS policy execution successful.
+2025-07-15 13:12:55.158 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - 204 null null 5.6968ms
+2025-07-15 13:12:55.162 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - application/json 62
+2025-07-15 13:12:55.167 +05:30 [INF] CORS policy execution successful.
+2025-07-15 13:12:55.169 +05:30 [INF] Executing endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 13:12:55.171 +05:30 [INF] Route matched with {action = "ParseFlightQuery", controller = "FlightSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ParseFlightQuery(System.String) on controller TravelEaseApi.Controllers.FlightSearchController (TravelEaseApi).
+2025-07-15 13:12:55.175 +05:30 [INF] Processing flight search input...
+2025-07-15 13:12:55.176 +05:30 [INF] Received user input for parsing: find me a flight from delhi to Mumbai next month under 90000
+2025-07-15 13:12:57.563 +05:30 [INF] Successfully parsed FlightQuery: {"From":"Delhi","To":"Mumbai","Month":"next month","MaxBudget":90000,"$type":"FlightQuery"}
+2025-07-15 13:12:57.587 +05:30 [INF] Executing OkObjectResult, writing value of type 'TravelEaseApi.Models.FlightQuery'.
+2025-07-15 13:12:57.599 +05:30 [INF] Executed action TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi) in 2422.8594ms
+2025-07-15 13:12:57.613 +05:30 [INF] Executed endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 13:12:57.618 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - 200 null application/json; charset=utf-8 2456.3118ms
+2025-07-15 13:21:08.006 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5055/FlightPricePrediction/predict - null null
+2025-07-15 13:21:08.010 +05:30 [INF] CORS policy execution successful.
+2025-07-15 13:21:08.011 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5055/FlightPricePrediction/predict - 204 null null 5.5096ms
+2025-07-15 13:21:08.016 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5055/FlightPricePrediction/predict - application/json 50
+2025-07-15 13:21:08.020 +05:30 [INF] CORS policy execution successful.
+2025-07-15 13:21:08.022 +05:30 [INF] Executing endpoint 'TravelEaseApi.Controllers.FlightPricePredictionController.PredictPrice (TravelEaseApi)'
+2025-07-15 13:21:08.035 +05:30 [INF] Route matched with {action = "PredictPrice", controller = "FlightPricePrediction"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PredictPrice(TravelEaseApi.Models.FlightQuery) on controller TravelEaseApi.Controllers.FlightPricePredictionController (TravelEaseApi).
+2025-07-15 13:21:08.050 +05:30 [INF] Executing OkObjectResult, writing value of type 'TravelEaseApi.Models.PricePredictionResult'.
+2025-07-15 13:21:08.055 +05:30 [INF] Executed action TravelEaseApi.Controllers.FlightPricePredictionController.PredictPrice (TravelEaseApi) in 15.5495ms
+2025-07-15 13:21:08.057 +05:30 [INF] Executed endpoint 'TravelEaseApi.Controllers.FlightPricePredictionController.PredictPrice (TravelEaseApi)'
+2025-07-15 13:21:08.058 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5055/FlightPricePrediction/predict - 200 null application/json; charset=utf-8 42.174ms
+2025-07-15 14:15:07.884 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - null null
+2025-07-15 14:15:07.889 +05:30 [INF] CORS policy execution successful.
+2025-07-15 14:15:07.890 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - 204 null null 5.772ms
+2025-07-15 14:15:07.895 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - application/json 54
+2025-07-15 14:15:07.904 +05:30 [INF] CORS policy execution successful.
+2025-07-15 14:15:07.905 +05:30 [INF] Executing endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 14:15:07.910 +05:30 [INF] Route matched with {action = "ParseFlightQuery", controller = "FlightSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ParseFlightQuery(System.String) on controller TravelEaseApi.Controllers.FlightSearchController (TravelEaseApi).
+2025-07-15 14:15:07.913 +05:30 [INF] Processing flight search input...
+2025-07-15 14:15:07.914 +05:30 [INF] Received user input for parsing: find me a flight from mumbai to delhi for next month
+2025-07-15 14:15:11.607 +05:30 [INF] Successfully parsed FlightQuery: {"From":"Mumbai","To":"Delhi","Month":"next month","MaxBudget":null,"$type":"FlightQuery"}
+2025-07-15 14:15:11.630 +05:30 [INF] Executing OkObjectResult, writing value of type 'TravelEaseApi.Models.FlightQuery'.
+2025-07-15 14:15:11.643 +05:30 [INF] Executed action TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi) in 3730.2973ms
+2025-07-15 14:15:11.648 +05:30 [INF] Executed endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 14:15:11.654 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - 200 null application/json; charset=utf-8 3758.0368ms
+2025-07-15 14:21:23.120 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - null null
+2025-07-15 14:21:23.124 +05:30 [INF] CORS policy execution successful.
+2025-07-15 14:21:23.125 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - 204 null null 5.0424ms
+2025-07-15 14:21:23.133 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - application/json 62
+2025-07-15 14:21:23.138 +05:30 [INF] CORS policy execution successful.
+2025-07-15 14:21:23.140 +05:30 [INF] Executing endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 14:21:23.141 +05:30 [INF] Route matched with {action = "ParseFlightQuery", controller = "FlightSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ParseFlightQuery(System.String) on controller TravelEaseApi.Controllers.FlightSearchController (TravelEaseApi).
+2025-07-15 14:21:23.145 +05:30 [INF] Processing flight search input...
+2025-07-15 14:21:23.147 +05:30 [INF] Received user input for parsing: find me aflight from delhi to kolkata under 20000 next month
+2025-07-15 14:21:26.449 +05:30 [INF] Successfully parsed FlightQuery: {"From":"Delhi","To":"Kolkata","Month":"next month","MaxBudget":20000,"$type":"FlightQuery"}
+2025-07-15 14:21:26.473 +05:30 [INF] Executing OkObjectResult, writing value of type 'TravelEaseApi.Models.FlightQuery'.
+2025-07-15 14:21:26.495 +05:30 [INF] Executed action TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi) in 3349.7424ms
+2025-07-15 14:21:26.498 +05:30 [INF] Executed endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 14:21:26.500 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - 200 null application/json; charset=utf-8 3367.3358ms
+2025-07-15 14:24:16.035 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - null null
+2025-07-15 14:24:16.039 +05:30 [INF] CORS policy execution successful.
+2025-07-15 14:24:16.040 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - 204 null null 5.2238ms
+2025-07-15 14:24:16.047 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - application/json 62
+2025-07-15 14:24:16.050 +05:30 [INF] CORS policy execution successful.
+2025-07-15 14:24:16.051 +05:30 [INF] Executing endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 14:24:16.052 +05:30 [INF] Route matched with {action = "ParseFlightQuery", controller = "FlightSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ParseFlightQuery(System.String) on controller TravelEaseApi.Controllers.FlightSearchController (TravelEaseApi).
+2025-07-15 14:24:16.054 +05:30 [INF] Processing flight search input...
+2025-07-15 14:24:16.055 +05:30 [INF] Received user input for parsing: find me a flight from delhi to mumbai next month under 20000
+2025-07-15 14:24:19.045 +05:30 [INF] Successfully parsed FlightQuery: {"From":"Delhi","To":"Mumbai","Month":"next month","MaxBudget":20000,"$type":"FlightQuery"}
+2025-07-15 14:24:19.053 +05:30 [INF] Executing OkObjectResult, writing value of type 'TravelEaseApi.Models.FlightQuery'.
+2025-07-15 14:24:19.055 +05:30 [INF] Executed action TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi) in 3000.5175ms
+2025-07-15 14:24:19.058 +05:30 [INF] Executed endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 14:24:19.061 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - 200 null application/json; charset=utf-8 3014.4805ms
+2025-07-15 14:24:33.252 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - null null
+2025-07-15 14:24:33.257 +05:30 [INF] CORS policy execution successful.
+2025-07-15 14:24:33.259 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - 204 null null 7.4021ms
+2025-07-15 14:24:33.265 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - application/json 19
+2025-07-15 14:24:33.269 +05:30 [INF] CORS policy execution successful.
+2025-07-15 14:24:33.275 +05:30 [INF] Executing endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 14:24:33.277 +05:30 [INF] Route matched with {action = "ParseFlightQuery", controller = "FlightSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ParseFlightQuery(System.String) on controller TravelEaseApi.Controllers.FlightSearchController (TravelEaseApi).
+2025-07-15 14:24:33.280 +05:30 [INF] Processing flight search input...
+2025-07-15 14:24:33.281 +05:30 [INF] Received user input for parsing: find me a flight 
+2025-07-15 14:24:35.307 +05:30 [ERR] Error parsing user input via OpenAI
+Newtonsoft.Json.JsonReaderException: Error parsing Infinity value. Path '', line 1, position 1.
+   at Newtonsoft.Json.JsonTextReader.ParseNumberPositiveInfinity(ReadType readType, Boolean matched)
+   at Newtonsoft.Json.JsonTextReader.ParseNumberPositiveInfinity(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at TravelEaseApi.Services.GPTParserService.ParseInputAsync(String userInput) in D:\TravelEase.ai\TravelEaseApi\Services\GPTParserService.cs:line 76
+2025-07-15 14:24:35.377 +05:30 [ERR] GPTParserService returned null.
+2025-07-15 14:24:35.381 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-07-15 14:24:35.384 +05:30 [INF] Executed action TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi) in 2104.5141ms
+2025-07-15 14:24:35.385 +05:30 [INF] Executed endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 14:24:35.389 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - 500 null text/plain; charset=utf-8 2123.6381ms
+2025-07-15 14:26:35.693 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - null null
+2025-07-15 14:26:35.698 +05:30 [INF] CORS policy execution successful.
+2025-07-15 14:26:35.699 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - 204 null null 6.1353ms
+2025-07-15 14:26:35.708 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - application/json 61
+2025-07-15 14:26:35.712 +05:30 [INF] CORS policy execution successful.
+2025-07-15 14:26:35.714 +05:30 [INF] Executing endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 14:26:35.718 +05:30 [INF] Route matched with {action = "ParseFlightQuery", controller = "FlightSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ParseFlightQuery(System.String) on controller TravelEaseApi.Controllers.FlightSearchController (TravelEaseApi).
+2025-07-15 14:26:35.721 +05:30 [INF] Processing flight search input...
+2025-07-15 14:26:35.725 +05:30 [INF] Received user input for parsing: find me a flight from delhi to mumbai under 20000 next week
+2025-07-15 14:26:38.805 +05:30 [INF] Successfully parsed FlightQuery: {"From":"Delhi","To":"Mumbai","Month":"next week","MaxBudget":20000,"$type":"FlightQuery"}
+2025-07-15 14:26:38.831 +05:30 [INF] Executing OkObjectResult, writing value of type 'TravelEaseApi.Models.FlightQuery'.
+2025-07-15 14:26:38.841 +05:30 [INF] Executed action TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi) in 3120.4262ms
+2025-07-15 14:26:38.845 +05:30 [INF] Executed endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 14:26:38.847 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - 200 null application/json; charset=utf-8 3139.4067ms
+2025-07-15 14:35:10.264 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - null null
+2025-07-15 14:35:10.277 +05:30 [INF] CORS policy execution successful.
+2025-07-15 14:35:10.279 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - 204 null null 13.8331ms
+2025-07-15 14:35:10.283 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - application/json 62
+2025-07-15 14:35:10.285 +05:30 [INF] CORS policy execution successful.
+2025-07-15 14:35:10.286 +05:30 [INF] Executing endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 14:35:10.288 +05:30 [INF] Route matched with {action = "ParseFlightQuery", controller = "FlightSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ParseFlightQuery(System.String) on controller TravelEaseApi.Controllers.FlightSearchController (TravelEaseApi).
+2025-07-15 14:35:10.292 +05:30 [INF] Processing flight search input...
+2025-07-15 14:35:10.293 +05:30 [INF] Received user input for parsing: find me a flight from delhi to mumbai under 20000 next month
+2025-07-15 14:35:12.747 +05:30 [INF] Successfully parsed FlightQuery: {"From":"Delhi","To":"Mumbai","Month":"next month","MaxBudget":20000,"$type":"FlightQuery"}
+2025-07-15 14:35:12.768 +05:30 [INF] Executing OkObjectResult, writing value of type 'TravelEaseApi.Models.FlightQuery'.
+2025-07-15 14:35:12.774 +05:30 [INF] Executed action TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi) in 2482.5957ms
+2025-07-15 14:35:12.778 +05:30 [INF] Executed endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 14:35:12.786 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - 200 null application/json; charset=utf-8 2502.6452ms
+2025-07-15 14:43:24.859 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - null null
+2025-07-15 14:43:24.866 +05:30 [INF] CORS policy execution successful.
+2025-07-15 14:43:24.867 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - 204 null null 8.7643ms
+2025-07-15 14:43:24.871 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - application/json 62
+2025-07-15 14:43:24.873 +05:30 [INF] CORS policy execution successful.
+2025-07-15 14:43:24.874 +05:30 [INF] Executing endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 14:43:24.875 +05:30 [INF] Route matched with {action = "ParseFlightQuery", controller = "FlightSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ParseFlightQuery(System.String) on controller TravelEaseApi.Controllers.FlightSearchController (TravelEaseApi).
+2025-07-15 14:43:24.882 +05:30 [INF] Processing flight search input...
+2025-07-15 14:43:24.884 +05:30 [INF] Received user input for parsing: find me a flight from delhi to mumbai under 20000 next month
+2025-07-15 14:43:28.282 +05:30 [INF] Successfully parsed FlightQuery: {"From":"Delhi","To":"Mumbai","Month":"next month","MaxBudget":20000,"$type":"FlightQuery"}
+2025-07-15 14:43:28.305 +05:30 [INF] Executing OkObjectResult, writing value of type 'TravelEaseApi.Models.FlightQuery'.
+2025-07-15 14:43:28.311 +05:30 [INF] Executed action TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi) in 3429.0379ms
+2025-07-15 14:43:28.315 +05:30 [INF] Executed endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 14:43:28.318 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - 200 null application/json; charset=utf-8 3446.5131ms
+2025-07-15 14:51:51.637 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - null null
+2025-07-15 14:51:51.640 +05:30 [INF] CORS policy execution successful.
+2025-07-15 14:51:51.642 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - 204 null null 4.7666ms
+2025-07-15 14:51:51.647 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - application/json 4
+2025-07-15 14:51:51.651 +05:30 [INF] CORS policy execution successful.
+2025-07-15 14:51:51.652 +05:30 [INF] Executing endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 14:51:51.654 +05:30 [INF] Route matched with {action = "ParseFlightQuery", controller = "FlightSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ParseFlightQuery(System.String) on controller TravelEaseApi.Controllers.FlightSearchController (TravelEaseApi).
+2025-07-15 14:51:51.657 +05:30 [INF] Processing flight search input...
+2025-07-15 14:51:51.658 +05:30 [INF] Received user input for parsing: tt
+2025-07-15 14:51:56.831 +05:30 [ERR] Error parsing user input via OpenAI
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: A. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at TravelEaseApi.Services.GPTParserService.ParseInputAsync(String userInput) in D:\TravelEase.ai\TravelEaseApi\Services\GPTParserService.cs:line 76
+2025-07-15 14:51:56.856 +05:30 [ERR] GPTParserService returned null.
+2025-07-15 14:51:56.865 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-07-15 14:51:56.872 +05:30 [INF] Executed action TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi) in 5216.0457ms
+2025-07-15 14:51:56.876 +05:30 [INF] Executed endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 14:51:56.880 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - 500 null text/plain; charset=utf-8 5232.7595ms
+2025-07-15 15:47:21.852 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - null null
+2025-07-15 15:47:21.856 +05:30 [INF] CORS policy execution successful.
+2025-07-15 15:47:21.857 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5055/FlightSearch/parse - 204 null null 5.3345ms
+2025-07-15 15:47:21.864 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - application/json 62
+2025-07-15 15:47:21.867 +05:30 [INF] CORS policy execution successful.
+2025-07-15 15:47:21.868 +05:30 [INF] Executing endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 15:47:21.870 +05:30 [INF] Route matched with {action = "ParseFlightQuery", controller = "FlightSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ParseFlightQuery(System.String) on controller TravelEaseApi.Controllers.FlightSearchController (TravelEaseApi).
+2025-07-15 15:47:21.873 +05:30 [INF] Processing flight search input...
+2025-07-15 15:47:21.874 +05:30 [INF] Received user input for parsing: find me a flight from delhi to mumbai under 20000 next month
+2025-07-15 15:47:24.335 +05:30 [INF] Successfully parsed FlightQuery: {"From":"Delhi","To":"Mumbai","Month":"next month","MaxBudget":20000,"$type":"FlightQuery"}
+2025-07-15 15:47:24.342 +05:30 [INF] Executing OkObjectResult, writing value of type 'TravelEaseApi.Models.FlightQuery'.
+2025-07-15 15:47:24.345 +05:30 [INF] Executed action TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi) in 2472.1613ms
+2025-07-15 15:47:24.348 +05:30 [INF] Executed endpoint 'TravelEaseApi.Controllers.FlightSearchController.ParseFlightQuery (TravelEaseApi)'
+2025-07-15 15:47:24.351 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5055/FlightSearch/parse - 200 null application/json; charset=utf-8 2486.9077ms
+2025-07-15 20:08:57.584 +05:30 [INF] Application is shutting down...
+2025-07-15 20:09:46.422 +05:30 [INF] Starting TravelEaseApi
+2025-07-15 20:09:46.532 +05:30 [INF] Now listening on: http://localhost:5055
+2025-07-15 20:09:46.538 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-15 20:09:46.540 +05:30 [INF] Hosting environment: Development
+2025-07-15 20:09:46.541 +05:30 [INF] Content root path: D:\TravelEase.ai\TravelEaseApi
+2025-07-15 20:12:55.733 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5055/swagger - null null
+2025-07-15 20:12:55.798 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5055/swagger - 301 0 null 67.1795ms
+2025-07-15 20:12:55.811 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5055/swagger/index.html - null null
+2025-07-15 20:12:55.919 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5055/swagger/index.html - 200 null text/html;charset=utf-8 107.5483ms
+2025-07-15 20:12:55.967 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5055/swagger/swagger-ui.css - null null
+2025-07-15 20:12:55.967 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5055/swagger/swagger-ui-bundle.js - null null
+2025-07-15 20:12:55.968 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5055/swagger/swagger-ui-standalone-preset.js - null null
+2025-07-15 20:12:56.030 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-07-15 20:12:56.030 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-07-15 20:12:56.045 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-07-15 20:12:56.051 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5055/swagger/swagger-ui.css - 200 152034 text/css 84.507ms
+2025-07-15 20:12:56.051 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5055/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 83.4427ms
+2025-07-15 20:12:56.058 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5055/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 90.551ms
+2025-07-15 20:12:56.484 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5055/swagger/v1/swagger.json - null null
+2025-07-15 20:12:56.544 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5055/swagger/favicon-32x32.png - null null
+2025-07-15 20:12:56.548 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-15 20:12:56.555 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5055/swagger/favicon-32x32.png - 200 628 image/png 10.733ms
+2025-07-15 20:12:56.701 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5055/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 217.8746ms
+2025-07-15 20:19:19.658 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5055/swagger/index.html - null null
+2025-07-15 20:19:19.663 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5055/swagger/index.html - 200 null text/html;charset=utf-8 4.2001ms
+2025-07-15 20:19:20.229 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5055/swagger/v1/swagger.json - null null
+2025-07-15 20:19:20.246 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5055/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.7745ms
+2025-07-15 20:20:20.142 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5055/api/FlightAggregator/search?from=DEL&to=DXB&date=2025-08-01 - null null
+2025-07-15 20:20:20.153 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-07-15 20:20:20.162 +05:30 [INF] Executing endpoint 'TravelEaseApi.Controllers.FlightAggregatorController.Search (TravelEaseApi)'
+2025-07-15 20:20:20.208 +05:30 [INF] Route matched with {action = "Search", controller = "FlightAggregator"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Search(System.String, System.String, System.String) on controller TravelEaseApi.Controllers.FlightAggregatorController (TravelEaseApi).
+2025-07-15 20:20:20.245 +05:30 [INF] Start processing HTTP request GET https://api.travelpayouts.com/aviasales/v3/prices_for_dates?origin=DEL&destination=DXB&departure_at=2025-08-01&token=9c90d7401e9630a4ab2ff6e4a7cf020d&marker=437825
+2025-07-15 20:20:20.252 +05:30 [INF] Sending HTTP request GET https://api.travelpayouts.com/aviasales/v3/prices_for_dates?origin=DEL&destination=DXB&departure_at=2025-08-01&token=9c90d7401e9630a4ab2ff6e4a7cf020d&marker=437825
+2025-07-15 20:20:21.651 +05:30 [INF] Received HTTP response headers after 1392.3378ms - 200
+2025-07-15 20:20:21.654 +05:30 [INF] End processing HTTP request after 1414.35ms - 200
+2025-07-15 20:20:21.664 +05:30 [INF] Executing ContentResult with HTTP Response ContentType of application/json
+2025-07-15 20:20:21.671 +05:30 [INF] Executed action TravelEaseApi.Controllers.FlightAggregatorController.Search (TravelEaseApi) in 1452.9043ms
+2025-07-15 20:20:21.674 +05:30 [INF] Executed endpoint 'TravelEaseApi.Controllers.FlightAggregatorController.Search (TravelEaseApi)'
+2025-07-15 20:20:21.677 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5055/api/FlightAggregator/search?from=DEL&to=DXB&date=2025-08-01 - 200 43 application/json 1534.7361ms
+2025-07-15 20:33:51.796 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5055/swagger/index.html - null null
+2025-07-15 20:33:51.800 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5055/swagger/index.html - 200 null text/html;charset=utf-8 4.4097ms
+2025-07-15 20:33:52.322 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5055/swagger/v1/swagger.json - null null
+2025-07-15 20:33:52.339 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5055/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.8356ms
+2025-07-15 20:34:16.444 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5055/api/FlightAggregator/search?from=DEL&to=DXB&date=2025-08-01 - null null
+2025-07-15 20:34:16.451 +05:30 [INF] Executing endpoint 'TravelEaseApi.Controllers.FlightAggregatorController.Search (TravelEaseApi)'
+2025-07-15 20:34:16.455 +05:30 [INF] Route matched with {action = "Search", controller = "FlightAggregator"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Search(System.String, System.String, System.String) on controller TravelEaseApi.Controllers.FlightAggregatorController (TravelEaseApi).
+2025-07-15 20:34:16.461 +05:30 [INF] Start processing HTTP request GET https://api.travelpayouts.com/aviasales/v3/prices_for_dates?origin=DEL&destination=DXB&departure_at=2025-08-01&token=&marker=
+2025-07-15 20:34:16.462 +05:30 [INF] Sending HTTP request GET https://api.travelpayouts.com/aviasales/v3/prices_for_dates?origin=DEL&destination=DXB&departure_at=2025-08-01&token=&marker=
+2025-07-15 20:34:17.750 +05:30 [INF] Received HTTP response headers after 1282.8384ms - 401
+2025-07-15 20:34:17.756 +05:30 [INF] End processing HTTP request after 1295.2057ms - 401
+2025-07-15 20:34:17.766 +05:30 [INF] Executed action TravelEaseApi.Controllers.FlightAggregatorController.Search (TravelEaseApi) in 1307.2445ms
+2025-07-15 20:34:17.771 +05:30 [INF] Executed endpoint 'TravelEaseApi.Controllers.FlightAggregatorController.Search (TravelEaseApi)'
+2025-07-15 20:34:17.776 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at TravelEaseApi.Services.FlightSearchService.SearchFlightsAsync(String from, String to, String departDate) in D:\TravelEase.ai\TravelEaseApi\Services\FlightSearchService.cs:line 28
+   at TravelEaseApi.Controllers.FlightAggregatorController.Search(String from, String to, String date) in D:\TravelEase.ai\TravelEaseApi\Controllers\FlightAggregatorController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-15 20:34:17.830 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5055/api/FlightAggregator/search?from=DEL&to=DXB&date=2025-08-01 - 500 null text/plain; charset=utf-8 1385.9575ms
+2025-07-15 20:45:45.573 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5055/api/FlightAggregator/search?from=DEL&to=DXB&date=2025-08-01 - null null
+2025-07-15 20:45:45.577 +05:30 [INF] Executing endpoint 'TravelEaseApi.Controllers.FlightAggregatorController.Search (TravelEaseApi)'
+2025-07-15 20:45:45.578 +05:30 [INF] Route matched with {action = "Search", controller = "FlightAggregator"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Search(System.String, System.String, System.String) on controller TravelEaseApi.Controllers.FlightAggregatorController (TravelEaseApi).
+2025-07-15 20:45:45.586 +05:30 [INF] Start processing HTTP request GET https://api.travelpayouts.com/aviasales/v3/prices_for_dates?origin=DEL&destination=DXB&departure_at=2025-08-01&token=&marker=
+2025-07-15 20:45:45.593 +05:30 [INF] Sending HTTP request GET https://api.travelpayouts.com/aviasales/v3/prices_for_dates?origin=DEL&destination=DXB&departure_at=2025-08-01&token=&marker=
+2025-07-15 20:45:46.896 +05:30 [INF] Received HTTP response headers after 1298.7342ms - 401
+2025-07-15 20:45:46.900 +05:30 [INF] End processing HTTP request after 1313.9635ms - 401
+2025-07-15 20:45:46.912 +05:30 [INF] Executed action TravelEaseApi.Controllers.FlightAggregatorController.Search (TravelEaseApi) in 1327.1102ms
+2025-07-15 20:45:46.917 +05:30 [INF] Executed endpoint 'TravelEaseApi.Controllers.FlightAggregatorController.Search (TravelEaseApi)'
+2025-07-15 20:45:46.924 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at TravelEaseApi.Services.FlightSearchService.SearchFlightsAsync(String from, String to, String departDate) in D:\TravelEase.ai\TravelEaseApi\Services\FlightSearchService.cs:line 28
+   at TravelEaseApi.Controllers.FlightAggregatorController.Search(String from, String to, String date) in D:\TravelEase.ai\TravelEaseApi\Controllers\FlightAggregatorController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-15 20:45:46.995 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5055/api/FlightAggregator/search?from=DEL&to=DXB&date=2025-08-01 - 500 null text/html; charset=utf-8 1422.7155ms
+2025-07-15 20:45:47.399 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5055/favicon.ico - null null
+2025-07-15 20:45:47.443 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5055/favicon.ico - 404 0 null 44.6586ms
+2025-07-15 20:45:47.458 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5055/favicon.ico, Response status code: 404
+2025-07-15 20:48:36.336 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5055/api/FlightAggregator/search?from=DEL&to=DXB&date=2025-08-01 - null null
+2025-07-15 20:48:36.342 +05:30 [INF] Executing endpoint 'TravelEaseApi.Controllers.FlightAggregatorController.Search (TravelEaseApi)'
+2025-07-15 20:48:36.356 +05:30 [INF] Route matched with {action = "Search", controller = "FlightAggregator"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Search(System.String, System.String, System.String) on controller TravelEaseApi.Controllers.FlightAggregatorController (TravelEaseApi).
+2025-07-15 20:48:36.360 +05:30 [INF] Start processing HTTP request GET https://api.travelpayouts.com/aviasales/v3/prices_for_dates?origin=DEL&destination=DXB&departure_at=2025-08-01&token=&marker=
+2025-07-15 20:48:36.370 +05:30 [INF] Sending HTTP request GET https://api.travelpayouts.com/aviasales/v3/prices_for_dates?origin=DEL&destination=DXB&departure_at=2025-08-01&token=&marker=
+2025-07-15 20:48:37.505 +05:30 [INF] Received HTTP response headers after 1132.7652ms - 401
+2025-07-15 20:48:37.507 +05:30 [INF] End processing HTTP request after 1146.7113ms - 401
+2025-07-15 20:48:37.508 +05:30 [INF] Executed action TravelEaseApi.Controllers.FlightAggregatorController.Search (TravelEaseApi) in 1149.1812ms
+2025-07-15 20:48:37.512 +05:30 [INF] Executed endpoint 'TravelEaseApi.Controllers.FlightAggregatorController.Search (TravelEaseApi)'
+2025-07-15 20:48:37.515 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at TravelEaseApi.Services.FlightSearchService.SearchFlightsAsync(String from, String to, String departDate) in D:\TravelEase.ai\TravelEaseApi\Services\FlightSearchService.cs:line 28
+   at TravelEaseApi.Controllers.FlightAggregatorController.Search(String from, String to, String date) in D:\TravelEase.ai\TravelEaseApi\Controllers\FlightAggregatorController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-15 20:48:37.523 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5055/api/FlightAggregator/search?from=DEL&to=DXB&date=2025-08-01 - 500 null text/plain; charset=utf-8 1186.4156ms
