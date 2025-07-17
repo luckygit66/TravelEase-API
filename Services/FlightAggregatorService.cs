@@ -1,6 +1,9 @@
+using System;
+using System.Collections.Generic;
 using System.Net.Http;
+using System.Text.Json;
 using System.Threading.Tasks;
-using TravelEaseApi.Models; // ✅ This is required for ApiSettings
+using TravelEaseApi.Models; // ✅ Keep this at the top with other usings
 
 namespace TravelEaseApi.Services
 {
@@ -18,19 +21,48 @@ namespace TravelEaseApi.Services
 
         public async Task<string> SearchFlightsAsync(string from, string to, string date)
         {
-            var url = $"https://api.travelpayouts.com/v1/prices/cheap?origin={from}&destination={to}&depart_date={date}&currency=usd&token={_apiToken}";
-
-            Console.WriteLine($"Calling URL: {url}");
-
-            var response = await _httpClient.GetAsync(url);
-
-            if (!response.IsSuccessStatusCode)
+            // 🔧 MOCKED DATA INSTEAD OF REAL API CALL
+            var mockResponse = new
             {
-                Console.WriteLine($"Failed with status code: {response.StatusCode}");
-                return null;
-            }
+                data = new Dictionary<string, object>
+                {
+                    {
+                        "SIN", new Dictionary<string, object>
+                        {
+                            {
+                                "0", new {
+                                    airline = "QZ",
+                                    departure_at = "2025-08-10T00:05:00+07:00",
+                                    return_at = "2025-08-19T17:55:00+08:00",
+                                    expires_at = "2025-07-17T09:04:12Z",
+                                    price = 204,
+                                    flight_number = 249
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "PAR", new Dictionary<string, object>
+                        {
+                            {
+                                "0", new {
+                                    airline = "VY",
+                                    departure_at = "2025-09-02T19:50:00+01:00",
+                                    return_at = "2025-09-06T13:40:00+02:00",
+                                    expires_at = "2025-07-17T09:06:09Z",
+                                    price = 102,
+                                    flight_number = 8945
+                                }
+                            }
+                        }
+                    }
+                },
+                currency = "usd",
+                success = true
+            };
 
-            return await response.Content.ReadAsStringAsync();
+            var json = JsonSerializer.Serialize(mockResponse);
+            return await Task.FromResult(json);
         }
     }
 }
